@@ -6,10 +6,13 @@ const HeaderComponent = (props) =>(<div></div>);
 export default class SidebarComponent extends Component{
     render(){
         return(
-            <div class = "sidebar-wrapper">
+            <Row>
                 <HeaderComponent/>
-
-            </div>
+            </Row>
+            <Row>
+                <InformationComponent/>
+            </Row>    
+           
         )
     }
 }

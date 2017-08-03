@@ -12,7 +12,7 @@ export default class MemorableInformation extends Component{
 		value="do-not-share" checked/>
 		None of your logon details will be shared<br/>
         <div>
-		<p>Enter the indicated characters from your memorable<br>information</p>
+		<p>Enter the indicated characters from your memorable<br/>information</p>
 
 		<label for="char1">2nd</label><br/>
 		<input list="char1" name="character"/>

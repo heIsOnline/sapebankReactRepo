@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import '../../../styles/globalRight.css';
+
 
 export default class ChooseAccount extends Component{
     render(){

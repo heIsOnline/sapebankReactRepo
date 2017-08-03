@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Container, Row, Column } from 'react-grid-system';
+import { Container, Row, Col } from 'react-grid-system';
 import MainComponent from './components/main/MainComponent.jsx';
 import SidebarComponent from './components/sidebar/SidebarComponent.jsx';
 import './styles/global.css';
@@ -12,9 +12,10 @@ class App extends Component{
         return(
                 <Container>
                     <Row>
-                        <column>
-                        <MainComponent/>
-                        </column>
+                            <SidebarComponent/>
+                        
+                            <MainComponent/>
+                        
                     </Row>    
                 </Container>
                 

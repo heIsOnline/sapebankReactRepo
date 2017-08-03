@@ -1,17 +1,20 @@
 import React,{Component} from 'react';
-import ReactDOM from 'react-dom';
+import { Column,Row } from 'react-grid-system';
+import InformationComponent from './information/InformationComponent';
 
-const HeaderComponent = (props) =>(<div></div>);
+const HeaderComponent = () =>(<div>abc</div>);
 
 export default class SidebarComponent extends Component{
     render(){
         return(
-            <Row>
-                <HeaderComponent/>
-            </Row>
-            <Row>
-                <InformationComponent/>
-            </Row>    
+            <Column md = {4} lg = {4}>            
+                <Row>
+                    <HeaderComponent/>
+                </Row>
+                <Row>
+                    <InformationComponent/>
+                </Row>
+            </Column>    
            
         )
     }

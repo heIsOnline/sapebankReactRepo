@@ -1,0 +1,45 @@
+h1{
+                font-size: 25px;
+}
+a{
+                color: #4CAF50;
+}
+.dispBlock{
+                display: block;
+}
+.registerInfo{
+                width: 416px;
+                margin-top: 20px;
+}
+.accountForm{
+                margin-top: 20px;
+}
+.accountForm #account-details{
+                width: 304px;
+                padding: 10px;
+}
+.accountForm a{
+                color: #000;
+}
+input[name="uID"]{
+                width: 280px;
+                padding: 10px;
+}
+.bankingId{
+                display: block;
+                margin-top: 20px;
+                margin-bottom: 20px;
+}
+.continueBtn{
+ 
+                margin-top: 20px;
+                background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -4,6 +4,7 @@ export default class BankingPassword extends Component{
     render(){
         return(
             <div>
+			<h1 className="{mainHeading}">Confirm Your Identity</h1>
                 <p>Please enter your internet banking password.</p>
 
 		<form action="">

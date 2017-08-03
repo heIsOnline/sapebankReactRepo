@@ -1,14 +1,15 @@
-.shareInfo{
-                width: 416px;
-                margin-top: 20px;
-}
-h1{
+.mainHeading{
                 font-size: 25px;
+                margin-top: 120px;
 }
-h2{
-                font-size: 16px;
+.descriptionHeading{
+                font-size: 18px;
+                margin-top: 16px;
 }
-.marginLeft{
-                margin-left: -24px;
+.descriptionItem{
+               margin-top: 10px;
+               margin-left: 16px;
+               list-style-type:disc;
 }
+
  

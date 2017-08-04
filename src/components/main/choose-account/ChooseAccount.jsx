@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import styles from '../../../styles/globalRight.css';
+import '../../../styles/globalRight.css';
 
 export default class ChooseAccount extends Component{
 

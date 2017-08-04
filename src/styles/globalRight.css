@@ -22,11 +22,14 @@
 }
 .accountType {
      width: 50px;
-  background: #333;
-  margin-top: 30px;
+     background: #333;
+     margin-top: 30px;
 }
 .dispBlock{
                 display: block;
+}
+.items{
+    width:80px;
 }
 .registerInfo{
     width: 416px;
@@ -96,4 +99,8 @@ input[name="uID"]{
 }
 .cancel a{
     color: #4CAF50;
+}
+.listItem{
+    display: inline-block;
+    margin-right: 15px;
 }

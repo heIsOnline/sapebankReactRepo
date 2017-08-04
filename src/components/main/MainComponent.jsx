@@ -38,9 +38,6 @@ export default class MainComponent extends Component{
 
 				<Row>
 					<Col  offset={{ md: 2 }}>
-
-					<input type="submit" name = "" value="Back" className="backBtn"/>
-					<input type="submit" name = "" value="Continue" className="continueBtn"/>
 		            </Col>  
 				</Row>
 				

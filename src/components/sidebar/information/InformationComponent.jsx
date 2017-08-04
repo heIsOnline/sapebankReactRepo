@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import { Col,Row } from 'react-grid-system';
-import styles from '../../../styles/globalLeft.css';
+import '../../../styles/globalLeft.css';
 
 const HeaderComponent = (props) =>(<div></div>);
 

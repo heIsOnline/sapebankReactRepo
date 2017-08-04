@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import styles from '../../../styles/globalRight.css';
+import '../../../styles/globalRight.css';
 export default class BankingPassword extends Component{
     render(){
         return(
@@ -8,15 +8,15 @@ export default class BankingPassword extends Component{
                 <p>Please enter your internet banking password.</p>
 
 		<form action="">
-			<label for="unshared"></label>
+			<label htmlFor="unshared"></label>
 			<input type="checkbox" id="unshared" name="logon"
 			value="do-not-share" checked/>
 			None of your logon details will be shared<br/><br/>
      
-			<label for="lastname">Password</label><br/><br/> 
+			<label htmlForr="lastname">Password</label><br/><br/> 
 			<input type="text" name="uID" placeholder="Password"/><br/><br/>
 
-			<label for="remember-me"></label>
+			<label htmlFor="remember-me"></label>
 			<input type="checkbox" id="remember-me" name="remember"
 			value="remember-UID"/>
 			Remember My User ID<br/><br/>

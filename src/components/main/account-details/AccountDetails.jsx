@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import styles from '../../../styles/globalRight.css';
+import '../../../styles/globalRight.css';
 export default class AccountDetails extends Component{
     render(){
         return(
@@ -12,7 +12,7 @@ export default class AccountDetails extends Component{
 	</p>	
 
 		<form action="" class="accountForm">
-			<label for="unshared"></label>
+			<label htmlFor="unshared"></label>
 			<input type="checkbox" id="unshared" name="logon"
 			value="do-not-share" checked/> None of your logon details will be shared
             
@@ -24,10 +24,10 @@ export default class AccountDetails extends Component{
 				<option value="lorel">lorel</option>
 			</select>
             
-			<label for="lastname" class="bankingId">Internet Banking User ID</label> 
+			<label htmlFor="lastname" class="bankingId">Internet Banking User ID</label> 
 			<input type="text" name="uID" placeholder="User ID"/>
 
-			<label for="remember-me" class="bankingId"></label>
+			<label htmlFor="remember-me" class="bankingId"></label>
 			<input type="checkbox" id="remember-me" name="remember"
 			value="remember-UID"/>Remember My User ID<br/>
 

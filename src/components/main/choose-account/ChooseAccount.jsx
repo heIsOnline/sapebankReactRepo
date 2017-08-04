@@ -2,7 +2,8 @@ import React,{Component} from 'react';
 import styles from '../../../styles/globalRight.css';
 
 export default class ChooseAccount extends Component{
-    render(){
+
+	render(){
         return(
             <div>
 			<h1 className="mainHeading">Choose Account</h1>
@@ -23,11 +24,11 @@ export default class ChooseAccount extends Component{
 		<input type="checkbox" id="classic2" name="account" value="Classic"/>
 		Classic 00-89-12 54321098<br/><br/>
 
-		<input type="submit" name = "" value="Back" className="backBtn"/>
-		<input type="submit" name = "" value="Continue" className="continueBtn"/>
 
 		<p className="cancel">Do you want to <a href="">Cancel</a></p>
 	</form>
+
+	
             </div>
         )    
     }

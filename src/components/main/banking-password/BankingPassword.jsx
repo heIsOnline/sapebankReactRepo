@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import styles from '../../../styles/globalRight.css';
 export default class BankingPassword extends Component{
     render(){
         return(
@@ -24,7 +24,7 @@ export default class BankingPassword extends Component{
             <input type="submit" name = "" value="Back"/>
 		    <input type="submit" name = "" value="Continue"/>
 
-		    <p>Do you want to <a href="">Cancel</a></p>
+		    <p className="cancel">Do you want to <a href="">Cancel</a></p>
 
 		</form>
             </div>

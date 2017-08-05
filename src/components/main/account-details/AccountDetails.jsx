@@ -2,6 +2,9 @@ import React,{Component} from 'react';
 import '../../../styles/globalRight.css';
 export default class AccountDetails extends Component{
     render(){
+		if(!this.props.data.accountTarget){
+			return null;
+		}
         return(
             <div>
 			    <h1>Confirm Your Identity</h1>
@@ -31,7 +34,7 @@ export default class AccountDetails extends Component{
 			<input type="checkbox" id="remember-me" name="remember"
 			value="remember-UID"/>Remember My User ID<br/>
 
-            <input type="submit" name = "" value="Continue" class="continueBtn"/>
+            <input type="button" name = "" value="Continue" class="continueBtn" onClick = {this.props.continueBtnClick}/>
             Do you want to <a href="">Cancel</a>
 
 		</form>

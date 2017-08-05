@@ -2,6 +2,9 @@ import React,{Component} from 'react';
 import '../../../styles/globalRight.css';
 export default class AuthenticateNumber extends Component{
     render(){
+		if(!this.props.data.authenticateTarget){
+			return null;
+		}
         return(
             <div>
 			    <h1 className="mainHeading">Confirm Your Request</h1>

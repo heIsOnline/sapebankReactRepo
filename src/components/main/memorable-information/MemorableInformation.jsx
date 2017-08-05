@@ -58,7 +58,7 @@ export default class MemorableInformation extends Component{
 		</datalist>
          </div>
         </div>
-		<input type="button" name = "" value="Back" className="backBtn" />
+		<input type="button" name = "" value="Back" className="backBtn" onClick = {this.props.backBtnClick}/>
 		<input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
 		<p className="cancel">Do you want to <a href="">Cancel</a></p>
 

@@ -1,7 +1,11 @@
 import React,{Component} from 'react';
 
 export default class SelectNumber extends Component{
+	
     render(){
+		if(!this.props.data.numberTarget){
+			return null;
+		}
         return(
             <div>
                 <p>You'll to use our automated phone call to confirm</p>
@@ -21,8 +25,8 @@ export default class SelectNumber extends Component{
 		<input type="checkbox" id="mobile2" name="contacts" value="mobile2"/>
 		Office +91 98******90<br/><br/>
 
-		<input type="submit" name = "" value="Back"/>
-		<input type="submit" name = "" value="Continue"/>
+		<input type="button" name = "" value="Back" onClick = {this.props.backBtnClick}/>
+		<input type="button" name = "" value="Continue" onClick = {this.props.continueBtnClick}/>
 
 		<p>Do you want to <a href="">Cancel</a></p>
 	</form>

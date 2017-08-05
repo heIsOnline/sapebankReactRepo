@@ -8,20 +8,14 @@ const HeaderComponent = () =>(<div><h1>sapebank</h1><span>The bank of the moment
 export default class SidebarComponent extends Component{
     
     render(){
-           function InfoComponent(props) {
-                const boolVar = props.boolVar;
-                if (boolVar) {
-                    return <InformationComponent/>;
-                }
-                return <GatewayAccountDetails/>;
-            }
+     
           return(  
              <Col md={4}>    
                 <Row>
                     <HeaderComponent/>
                 </Row>
                 <Row>
-                     <InfoComponent boolVar={true}/>
+                     <InformationComponent/>
                 </Row>
              </Col>      
         )

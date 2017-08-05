@@ -4,6 +4,9 @@ import '../../../styles/globalRight.css';
 export default class ChooseAccount extends Component{
 
 	render(){
+		if(!this.props.data.chooseTarget){
+			return null;
+		}
         return(
             <div>
 			<h1 className="mainHeading">Choose Account</h1>

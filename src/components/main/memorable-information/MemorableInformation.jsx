@@ -1,9 +1,17 @@
 import React,{Component} from 'react';
 import '../../../styles/globalRight.css';
+
 export default class MemorableInformation extends Component{
 
-    render(){
-		 
+	constructor(props){
+			super(props);
+		 }
+ 
+
+  render(){
+		if(!this.props.data.memorableTarget){
+			return null;
+		}
 		return(
             <div>
 			    <h1 className="mainHeading">Confirm Your Identity</h1>
@@ -50,8 +58,8 @@ export default class MemorableInformation extends Component{
 		</datalist>
          </div>
         </div>
-		<input type="submit" name = "" value="Back" className="backBtn"/>
-		<input type="button" name = "" value="Continue" className="continueBtn"/>
+		<input type="button" name = "" value="Back" className="backBtn" />
+		<input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
 		<p className="cancel">Do you want to <a href="">Cancel</a></p>
 
 	</form>

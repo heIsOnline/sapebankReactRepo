@@ -1,7 +1,13 @@
 import React,{Component} from 'react';
 import '../../../styles/globalRight.css';
 export default class BankingPassword extends Component{
+	constructor(props){
+		super(props);
+	}
     render(){
+		if(!this.props.data.bankingTarget){
+			return null;
+		}
         return(
             <div>
 			<h1 className="{mainHeading}">Confirm Your Identity</h1>
@@ -21,8 +27,8 @@ export default class BankingPassword extends Component{
 			value="remember-UID"/>
 			Remember My User ID<br/><br/>
 
-            <input type="submit" name = "" value="Back"/>
-		    <input type="submit" name = "" value="Continue"/>
+            <input type="button" name = "" value="Back" onClick = {this.props.backBtnClick}/>
+		    <input type="button" name = "" value="Continue" onClick = {this.props.continueBtnClick}/>
 
 		    <p className="cancel">Do you want to <a href="">Cancel</a></p>
 

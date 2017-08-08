@@ -4,7 +4,13 @@ import '../../../styles/globalLeft.css';
 const HeaderComponent = (props) =>(<div></div>);
 
 export default class GatewayAccountDetails extends Component{
+	constructor(props){
+        super(props);
+    }
     render(){
+		if(!this.props.flag){
+			return null;
+		}
         return(
            <Col offset={{ md: 1 }}>
                <div>

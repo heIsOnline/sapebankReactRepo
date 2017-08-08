@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import { Col,Row } from 'react-grid-system';
-import { BrowserRouter as Router,Link,Route } from 'react-router-dom';
 import ChooseAccount  from './choose-account/ChooseAccount';
 import AccountDetails  from './account-details/AccountDetails';
 import AuthenticateNumber from './authenticate-number/AuthenticateNumber';
@@ -12,6 +11,7 @@ import SelectNumber from './select-number/SelectNumber';
 export default class MainComponent extends Component{
 		continueBtnHandler(){
 		if(this.state.accountTarget === true){
+			this.props.renderHandler();
 			this.setState ({
 				accountTarget: false,
 				memorableTarget: true,

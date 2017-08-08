@@ -1,12 +1,12 @@
 import React,{Component} from 'react';
 import { Col,Row } from 'react-grid-system';
-import InformationComponent from './information/InformationComponent';
-import GatewayAccountDetails from './gatewayAccoutDetails/GatewayAccountDetails';
 import '../../styles/global.css'
 
 
 export default class SidebarComponent extends Component{
-    
+    constructor(props){
+        super(props);
+    }
     render(){
      
           return(  
@@ -17,7 +17,7 @@ export default class SidebarComponent extends Component{
                     </div>
                 </Row>
                 <Row>
-                     <InformationComponent/>
+                     {this.props.children}
                 </Row>
              </Col>      
         )

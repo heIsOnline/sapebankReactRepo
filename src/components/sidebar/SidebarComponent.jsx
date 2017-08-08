@@ -13,7 +13,6 @@ export default class SidebarComponent extends Component{
              <Col md={4} bsClass = "secondary-button-color">    
                 <Row>
                     <div>
-                        <h1>sapebank</h1><span>The bank of the moment lorem content</span>
                     </div>
                 </Row>
                 <Row>

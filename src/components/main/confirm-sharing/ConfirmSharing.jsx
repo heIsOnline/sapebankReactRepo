@@ -7,20 +7,21 @@ export default class ConfirmSharing extends Component{
 		}
         return(
             <div>
-                <p class="">Please confirm that you are about to share the following<br/>
+			<h1 className="mainHeading">Confirm Sharing</h1>
+                <p className="marginTop">Please confirm that you are about to share the following<br/>
 	information with FinAssist:</p>
 
 	<form>
-	    <p>Account<br/><br/>
+	    <p className="marginTop">Account<br/><br/>
 	    Premium 21-94-32 98765432</p>
 	    
-	    <p>Validity: 90 Days<br/><br/>
+	    <p className="marginTop">Validity: 90 Days<br/><br/>
 	    Summary of your standing order and direct debits</p>
 
-		<input type="button" name = "" value="Back" onClick = {this.props.backBtnClick}/>
-		<input type="button" name = "" value="Continue" onClick = {this.props.continueBtnClick}/>
+		<input type="button" name = "" value="Back" className="backBtn" onClick = {this.props.backBtnClick}/>
+		<input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
 
-		<p>Do you want to <a href="">Cancel</a></p>
+		<p className="cancel">Do you want to <a href="">Cancel</a></p>
 	</form>
             </div>
         )    

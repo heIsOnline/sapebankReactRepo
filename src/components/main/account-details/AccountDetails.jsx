@@ -7,8 +7,8 @@ export default class AccountDetails extends Component{
 		}
         return(
             <div>
-			    <h1>Confirm Your Identity</h1>
-	<p class="registerInfo">
+			    <h1 className="mainHeading">Confirm Your Identity</h1>
+	<p className="marginTop">
 	    To use the service you must be registered for Internet Banking.
 		If you are not registerd you can sign up alt
 		<a href="">sapebank.com</a>
@@ -17,24 +17,25 @@ export default class AccountDetails extends Component{
 		<form action="" class="accountForm">
 			<label htmlFor="unshared"></label>
 			<input type="checkbox" id="unshared" name="logon"
-			value="do-not-share" checked/> None of your logon details will be shared
+			value="do-not-share" checked className="marginTop"/> None of your logon details will be shared
             
-			<p>What type of account details do you have?</p>
-			<select id="account-details">
+			<p className="marginTop marginBottom">What type of account details do you have?</p>
+			<div className="dispBlock">
+			<select id="account-details" className="accoutnItems">
 			    <option value="lorel">lorel</option>
 				<option value="lorel">lorel</option>
 				<option value="lorel">lorel</option>
 				<option value="lorel">lorel</option>
 			</select>
-            
-			<label htmlFor="lastname" class="bankingId">Internet Banking User ID</label> 
-			<input type="text" name="uID" placeholder="User ID"/>
+            </div>
+			<label htmlFor="lastname" className="bankingId">Internet Banking User ID</label> 
+			<input type="text" name="uID" placeholder="User ID" className="dispBlock"/>
 
 			<label htmlFor="remember-me" class="bankingId"></label>
 			<input type="checkbox" id="remember-me" name="remember"
-			value="remember-UID"/>Remember My User ID<br/>
+			value="remember-UID" className="marginTop"/>Remember My User ID<br/>
 
-            <input type="button" name = "" value="Continue" class="continueBtn" onClick = {this.props.continueBtnClick}/>
+            <input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
             Do you want to <a href="">Cancel</a>
 
 		</form>

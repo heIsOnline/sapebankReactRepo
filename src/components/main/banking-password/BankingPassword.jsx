@@ -10,13 +10,13 @@ export default class BankingPassword extends Component{
 		}
         return(
             <div>
-			<h1 className="{mainHeading}">Confirm Your Identity</h1>
-                <p>Please enter your internet banking password.</p>
+			<h1 className="mainHeading">Confirm Your Identity</h1>
+                <p className="marginTop">Please enter your internet banking password.</p>
 
 		<form action="">
 			<label htmlFor="unshared"></label>
 			<input type="checkbox" id="unshared" name="logon"
-			value="do-not-share" checked/>
+			value="do-not-share" checked className="marginTop"/>
 			None of your logon details will be shared<br/><br/>
      
 			<label htmlForr="lastname">Password</label><br/><br/> 
@@ -27,8 +27,8 @@ export default class BankingPassword extends Component{
 			value="remember-UID"/>
 			Remember My User ID<br/><br/>
 
-            <input type="button" name = "" value="Back" onClick = {this.props.backBtnClick}/>
-		    <input type="button" name = "" value="Continue" onClick = {this.props.continueBtnClick}/>
+            <input type="button" name = "" value="Back" className="backBtn" onClick = {this.props.backBtnClick}/>
+		    <input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
 
 		    <p className="cancel">Do you want to <a href="">Cancel</a></p>
 

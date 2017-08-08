@@ -31,6 +31,10 @@
 .items{
     width:80px;
 }
+.accoutnItems{
+    width:290px;
+    padding: 10px;
+}
 .registerInfo{
     width: 416px;
      margin-top: 36px;

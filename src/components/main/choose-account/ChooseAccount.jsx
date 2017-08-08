@@ -27,8 +27,8 @@ export default class ChooseAccount extends Component{
 		<input type="checkbox" id="classic2" name="account" value="Classic"/>
 		Classic 00-89-12 54321098<br/><br/>
 
-		<input type="button" name = "" value="Back" onClick = {this.props.backBtnClick}/>
-		<input type="button" name = "" value="Continue" onClick = {this.props.continueBtnClick}/>
+		<input type="button" name = "" value="Back" className="backBtn" onClick = {this.props.backBtnClick}/>
+		<input type="button" name = "" value="Continue" className="continueBtn" onClick = {this.props.continueBtnClick}/>
 
 		<p className="cancel">Do you want to <a href="">Cancel</a></p>
 	</form>
